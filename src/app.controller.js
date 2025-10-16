@@ -1,7 +1,7 @@
 import { Controller, Dependencies, Get } from '@nestjs/common';
 import { AppService } from './app.service';
 
-@Controller()
+@Controller('hello')
 @Dependencies(AppService)
 export class AppController {
   constructor(appService) {
